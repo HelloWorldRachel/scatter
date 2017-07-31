@@ -78,7 +78,7 @@ d3.csv("auto.csv", function(error, data) {
   // change string (from CSV) into number format
   data.forEach(function(d) {
     d.weight = +d.weight;
-    d["mpg"] = +d["mpg"];
+    d.mpg = +d.mpg;
 //    console.log(d);
   });
 
@@ -99,7 +99,7 @@ d3.csv("auto.csv", function(error, data) {
       .text("weight");
 
   // y-axis
-  svg.append("lb")
+  svg.append(" ")
       .attr("class", "y axis")
       .call(yAxis)
     .append("text")
